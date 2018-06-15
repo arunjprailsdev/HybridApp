@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    logger.debug "User count from the local app: #{@users.size}"
   end
 
   # GET /users/1
